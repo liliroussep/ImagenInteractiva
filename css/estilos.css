@@ -1,0 +1,257 @@
+@charset "UTF-8";
+/* CSS Document */
+/* Copyright Compañía Peruana de Radiodifusión */	
+/* Maquetación: Lilian Pariguana  */						
+
+
+/************************************
+*********     RESET       	*********
+*************************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body{
+		background-color:#8aba2f;
+		font-family:Arial, Helvetica, sans-serif;
+		-webkit-user-select: none !important;  /* Chrome all / Safari all */
+  			-moz-user-select: none !important;     /* Firefox all */
+ 			-ms-user-select: none !important;    /* IE 10+ */
+
+  /* No support for these yet, use at own risk */
+  			-o-user-select: none !important;
+ 			 user-select: none !important;
+		}
+
+a{
+		outline: none;}
+p{
+		line-height:22px;}
+		
+
+/************************************
+*********     FIN-RESET     *********
+*************************************/
+		
+		
+/************************************
+*********     CARCASA       *********
+*************************************/
+
+main{
+		width:970px;
+		height:546px;
+		margin:0 auto;
+		margin-top:0px;
+		position:relative;
+		background-color:#34aba0;
+		overflow:hidden;
+		display:block;
+		background-image:url(../img/fondo_imgInteractiva.jpg);
+		background-repeat:no-repeat;
+	 	
+		}
+		
+.txt-btn{
+	font-size:18px;
+	font-weight:bold;
+	color:#FFF;
+	text-align:center;
+	padding-top:10px;}
+
+		
+/************************************
+*********     CABECERA      *********
+*************************************/		
+		header{
+		position:absolute;
+		top:0px;
+		width:970px;
+		height:125px;
+		background-image:url(../img/titular.svg);
+		background-repeat:no-repeat;
+		z-index:2;}
+		
+			
+/************************************
+*********    ACTIVIDADES    *********
+*************************************/
+		
+	section{
+		top:0px;
+		position:absolute;
+		width:100%;
+		height:99%;
+		overflow:hidden;	
+		}
+		.index1{
+			z-index:1;}
+		.index3{
+			z-index:3;}
+
+	
+		/*Elementos de acción*/
+	
+	/*blink*/
+		
+		
+		.blink {
+			animation: blink 1.5s steps(15, start) infinite;
+			-webkit-animation: blink 1s steps(15, start) infinite;
+		}
+	
+	
+		@-webkit-keyframes blink {
+				0% { -webkit-transform: scale(0.8);
+				opacity:1; }	
+				50% { -webkit-transform: scale(1);
+				opacity:0.7; }
+				100% { -webkit-transform: scale(0.8);
+				opacity:1; }
+			}
+			@-moz-keyframes blink {
+				0% { -moz-transform: scale(0.8);
+				opacity:1; }	
+				50% { -moz-transform: scale(1);
+				opacity:0.7; }
+				100% { -moz-transform: scale(0.8);
+				opacity:1; }
+			}
+			@-o-keyframes blink {
+				0%{ -o-transform: scale(0.8); 
+				opacity:1;}	
+				50% { -o-transform: scale(1); 
+				opacity:0.7;}
+				100%{ -o-transform: scale(0.8); 
+				opacity:1;}
+			}
+			@keyframes blink {
+				0% { transform: scale(0.8);
+				opacity:1; }	
+				50% { transform: scale(1); 
+				opacity:0.7;}
+				100% { transform: scale(0.8);
+				opacity:1; }
+			}
+
+/* cierra blink*/
+/************************************
+*********    ACTIVIDAD 1    *********
+*************************************/	
+	.wrap-bolinche{
+		position:absolute;
+		width:970px;
+		height:50px;
+		top:400px;
+		background-repeat:no-repeat;
+		background-image:url(../img/lines.svg);
+		}
+	.bolinche{
+		position:absolute;
+		width:70px;
+		height:70px;
+		top:0px;
+		cursor:pointer;
+		background-repeat:no-repeat;
+		background-image:url(../img/bolinche.svg);
+		}
+
+		.bolinche1{left:45px;}.bolinche2{left:210px;}.bolinche3{left:370px;}.bolinche4{left:530px;}.bolinche5{left:690px;}.bolinche6{
+			left:855px;}
+
+	.bolinche:hover{
+				-webkit-animation-duration: 0.5s;
+			-moz-animation-duration: 0.5s;
+			-o-animation-duration: 0.5s;
+			animation-duration: 0.5s;
+			-webkit-animation-fill-mode: both;
+			-moz-animation-fill-mode: both;
+			-o-animation-fill-mode: both;
+			animation-fill-mode: both;
+			background-image:url(../img/bolinche_hover.svg);
+			
+				-webkit-animation-name: pulse;
+				-moz-animation-name: pulse;
+				-o-animation-name: pulse;
+				animation-name: pulse;}
+			@-webkit-keyframes pulse {
+				0% { -webkit-transform: scale(1); }	
+				50% { -webkit-transform: scale(1.2); }
+				100% { -webkit-transform: scale(1); }
+			}
+			@-moz-keyframes pulse {
+				0% { -moz-transform: scale(1); }	
+				50% { -moz-transform: scale(1.2); }
+				100% { -moz-transform: scale(1); }
+			}
+			@-o-keyframes pulse {
+				0% { -o-transform: scale(1); }	
+				50% { -o-transform: scale(1.2); }
+				100% { -o-transform: scale(1); }
+			}
+			@keyframes pulse {
+				0% { transform: scale(1); }	
+				50% { transform: scale(1.2); }
+				100% { transform: scale(1); }
+			}
+
+
+/************************************
+*********   BOTONERA MENU   *********
+*************************************/			
+			
+			
+	footer{
+		position:absolute;
+		bottom:15px;
+		width:970px;
+		height:auto;
+		z-index:2;
+	background-color: rgba(52, 171, 160,0.7)}	
+		footer p {
+		float: left;
+		width: 16.6%;
+		text-align: center;
+		color: white;
+		padding: 10px 0;
+		font-size: 26px;
+		font-weight: 500;
+			}			
